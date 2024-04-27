@@ -1,0 +1,84 @@
+<!--
+Team Members: Inigo Abuel, Luxsan Jeyasingam, Robelene Icalina
+Date: 31 March 2024
+Section: 313
+
+This file is used to display the database form.
+It used to get the user's sql database info so that this website can connect its database.
+
+Code Author(s): 
+
+HTML - Luxsan Jeyasingam
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Abuel-Jeyasingam-Icalina">
+        <title>Account</title>
+        <link rel="stylesheet" type="text/css" href="../2-css/sign-in.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header-logo-only">
+                <a href="../pages/1-sign-in.html"><img src="../0-assets/irl-logo/png/logo-no-background.png" title="Go to Home" alt="irl-logo"></a> 
+            </header>
+            <main>
+                <form action="../server/setupDatabase.php" method="post" class="form" id="signInForm" onsubmit="">
+                    <h1 class="title">Input your database information</h1>              
+                    
+                    <div class="form-field">
+                        <label for="server">Server Name:</label>
+                        <input name="server" id="server">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="username">Username:</label>
+                        <input name="username" id="username">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password:</label>
+                        <input name="password" id="password">
+                    </div>
+                    <div class>
+                        <button id="databaseButton" class="button" type="submit">Submit</button>
+                    </div>
+
+                </form>
+
+
+                <!-- <form action="../server/connectToDatabase.php" method="post" class="form" id="signInForm">
+                    <h1 class="title">Input your database information</h1>              
+                    
+                    <div class="form-field">
+                        <label for="server">Server Name:</label>
+                        <input name="server" id="server">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="username">Username:</label>
+                        <input name="username" id="username">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password:</label>
+                        <input name="password" id="password">
+                    </div>
+                    <div class>
+                        <button id="databaseButton" class="button" type="submit">Submit</button>
+                    </div>
+                </form> -->
+
+            </main>
+            <footer>
+                <p>2024 IRL. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

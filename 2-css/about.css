@@ -1,0 +1,487 @@
+/*
+Team Members: Inigo Abuel, Luxsan Jeyasingam, Robelene Icalina
+Date: 31 March 2024
+Section: 313
+CSS styles for the about page
+
+Code Author(s): 
+
+CSS - Inigo Abuel
+*/
+
+*{
+    background: url(/0-assets/irl-images/coverr-looking-at-orange-clothes-8544-1080p.mp4);
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+/* page container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* styling for header */
+.header-logo-only{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: #ff5400;
+    height: 80px;
+    padding-left: 50px;
+}
+
+img{
+    display:flex;
+    height: 40px;
+}
+
+/* main container */
+main{
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: center;
+    background: #F5F5F5;
+    background-image:linear-gradient(rgba(0,0,0,.7), #FFBD59), url('/assignment2/0-assets/irl-images/pexels-max-fischer-5868272.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* title */
+
+
+
+@media screen and (max-width: 300px) {
+h1 {
+    display: flex;
+    font-size: 9vw;
+    font-weight: 900;
+    text-align: center;
+}
+}
+
+/* form container */
+form{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    padding: 50px;
+    margin: 50px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+/* styling for form*/
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.form-field{
+    margin-top:30px;
+}
+
+#button{
+    width: 100%;
+    background: #00BFFF;
+    border: none;
+    border-radius: 3px;
+    padding:12px;
+    margin-top:40px;
+    font-size: 15px;
+}
+
+#button:hover {
+    background: #96D9EA;
+}
+
+.link {
+    text-decoration: none;
+    font-size:14px;
+    color: #0e84dd;
+}
+
+p {
+    /* font-size:18px; */
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*footer styling */
+.newsletter {
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    width: 100vw;
+    padding: 50px 150px;
+    background-color: #96D9EA;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col {
+    width: 200px;
+}
+
+.footer-col a {
+    color: black;
+}
+
+.footer-container .footer-col li {
+    margin-top: 10px;
+}
+
+.newsletter {
+    width: 100vw;
+    justify-content: center;
+}
+
+.newsletter .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #96D9EA;
+    text-align: center;
+    
+}
+
+.newsletter .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.form .input-container {
+    display: flex;
+}
+
+.form .input-container input {
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+    border: none;
+}
+
+.newsletter .form button {
+    width: 100px;
+    height: 50px;
+    background: #FFBD59;
+    border: none;
+    font-size: 16px;
+}
+
+footer p{
+    background-color: #96D9EA;
+    padding: 10px 10px 10px 150px;
+}
+
+@media (max-width: 1440px) {
+    .search-box, .search button {
+        display: none;
+    }
+
+    #search-icon {
+        display: inline;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .icon-group {
+        justify-content: flex-end;
+    }
+
+    .icon-group img {
+        height: 20px;
+    }
+
+    .cat-link{
+        width: 100%;
+        padding: 150px 20px 20px 20px;
+        justify-content: center;
+    }
+
+    .product-main {
+        display: flex;
+        background-color: #F5F5F5;
+        margin: 0px 20px 50px 20px;
+    }
+
+    .product-img {
+        align-items: center;
+        justify-content: center;
+        max-width: 50%;
+    }
+    
+    .product-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    .product-details {
+        margin: 0px 20px 50px 20px;
+        padding: 20px;
+    }
+
+    /* .price-addcart img {
+        padding-left: 140px;
+        height: 30px;
+    } */
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links{
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .newsletter .content{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .form .input-container input{
+        width: 150px;
+    }
+
+    footer p {
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-box, .search button {
+        display: none;
+    }
+
+    #search-icon {
+        display: inline;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .icon-group {
+        justify-content: flex-end;
+    }
+
+    .icon-group img {
+        height: 20px;
+    }
+
+    .cat-link{
+        width: 100%;
+        padding: 150px 20px 20px 20px;
+        justify-content: center;
+    }
+
+    .product-main {
+        display: flex;
+        flex-direction: column;
+        background-color: #F5F5F5;
+        margin: 0px 20px 50px 20px;
+    }
+
+    .product-img {
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .product-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-title h1 {
+        font-size: 20px;
+    }
+
+    .product-title h2 {
+        font-size: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 30px 0px; 
+        flex-wrap: wrap;  */
+    }
+
+    .footer-links{
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .footer-col {
+        padding-top: 30px
+    }
+
+    .newsletter .content{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .form .input-container input{
+        width: 150px;
+    }
+
+    footer p {
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
+/* styling for responsive website */
+@media (max-width: 1024px) {  
+    form {
+        width:80%;
+        margin: 30px;
+        padding:30px;
+    }
+
+    .header-logo-only {
+        align-items: center;
+        padding-left: 0px;
+    }
+}
+
+#textarea{
+    /* margin-left: 0; */
+    resize: none;
+    display: flex;
+    width: 100%;
+}
+
+#open-shop-button {
+    width: 100%;
+    background: #00BFFF;
+    border:#0e84dd;
+    border-radius: 7px;
+    padding: 12px;
+    margin-top:50px;
+    font-size: 15px;
+}
+
+.landing-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.landing-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 15%;
+    align-items: center;
+    padding: 20px;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+    z-index: 2; /* Ensure content is above the video */
+}
+
+.h1Heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.paragraphs {
+    max-width: 600px; /* Adjust as needed */
+    text-align: center;
+    /* size: 18px; */
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .landing-video {
+        height: auto; /* Adjust height to fit smaller screens */
+    }
+
+    .content-overlay {
+        padding: 10px; /* Decrease padding for smaller screens */
+        margin-top: 20%;
+        justify-content: start;
+
+    }
+
+    .h1Heading {
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+
+    .paragraphs {
+        font-size:12px;
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+}
+
+/* Adjustments for even smaller screens, e.g., smartphones */
+@media only screen and (max-width: 480px) {
+    .content-overlay {
+        width: 100%;
+        height: 100%;    
+    }
+
+    .h1Heading {
+        font-size: 10px; /* Further decrease font size for smaller screens */
+    }
+
+    .paragraphs {
+        font-size:6px;
+        max-width: 100%; /* Allow paragraphs to take full width on smaller screens */
+        /* max-height: 100%; Allow paragraphs to take full width on smaller screens */
+    }
+}

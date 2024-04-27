@@ -1,0 +1,418 @@
+/*
+Team Members: Inigo Abuel, Luxsan Jeyasingam, Robelene Icalina
+Date: 31 March 2024
+Section: 313
+CSS styles for the wishlist-page
+
+Code Author(s): 
+
+CSS - Robelene Icalina
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-top{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #ff5400;
+    align-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.search button {
+    height: 40px;
+    width: 50px;
+    background-color: #96D9EA;
+    border: none;
+}
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;   
+}
+
+.icon-group img {
+    height: 25px;
+    margin: 0px 10px;
+}
+
+.icon-group img:hover {
+    height: 30px;
+}
+
+#search-icon {
+    display: none;
+}
+
+.nav-bottom .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #FFBD59;
+    align-items: center;
+    padding: 10px
+}
+
+.navbar li {
+    padding: 0px 20px;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/*wishlist styling */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 50px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.feature-product-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.wishlist-container h3, .feature-product h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.wishlist-container h4, .feature-product h4 {
+    font-size: 15px;
+}
+
+.price-addcart {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product h5 {
+    display: flex;
+    font-size: 25px;
+}
+
+.wishlist-container .product, .feature-product .product {
+    width: 15%;
+    height: auto;
+    min-width: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.wishlist-container .product:hover, .feature-product .product:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.6);
+    transition: 0.2s ease;
+}
+
+.wishlist-container .product img, .feature-product .product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.wishlist-container .product .desc,  .feature-product .product .desc{
+    text-align: start;
+    padding: 10px 0px;
+}
+
+.action-btn {
+    background-color: #96D9EA;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.addcart-delete {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.feature-product {
+    margin-top: 100px;
+    align-items: center;
+}
+
+/*footer styling */
+.newsletter {
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    padding: 50px 150px;
+    background-color: #96D9EA;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col {
+    width: 200px;
+}
+
+.footer-col a {
+    color: black;
+}
+
+.footer-container .footer-col li {
+    margin-top: 10px;
+}
+
+.newsletter {
+    width: 100vw;
+    justify-content: center;
+}
+
+.newsletter .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.form .input-container {
+    display: flex;
+}
+
+.form .input-container input {
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+    border: none;
+}
+
+.newsletter .form button {
+    width: 100px;
+    height: 50px;
+    background: #FFBD59;
+    border: none;
+    font-size: 16px;
+}
+
+#footer-year{
+    background-color: #96D9EA;
+    padding: 10px 10px 10px 150px;
+}
+
+@media (max-width: 1440px) {
+    .search-box, .search button {
+        display: none;
+    }
+
+    #search-icon {
+        display: inline;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .icon-group {
+        justify-content: flex-end;
+    }
+
+    .icon-group img {
+        height: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links{
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .newsletter .content{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .form .input-container input{
+        width: 150px;
+    }
+
+    #footer-year {
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-box, .search button, .filter, .cat-link {
+        display: none;
+    }
+
+    #search-icon {
+        display: inline;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .icon-group {
+        justify-content: flex-end;
+    }
+
+    .icon-group img {
+        height: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-links{
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .footer-col {
+        padding-top: 30px
+    }
+
+    .newsletter .content{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .form .input-container input{
+        width: 150px;
+    }
+
+    #footer-year {
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    main{
+        margin: 150px 10px;
+    }
+    
+    .wishlist-container .product, .feature-product .product {
+        min-width: 140px;
+        margin: 10px 10px;
+    }
+
+    .product-container {
+        margin: 5px;
+        padding: 0px;
+    }
+
+    .wishlist-container h1, .feature-product h2 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .product h5 {
+        font-size: 15px;
+    }
+
+    .wishlist-container h4 {
+        font-size: 10px;
+    }
+
+    .addcart-delete {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .feature-product-container, .product-container{
+        justify-content: center;
+    }
+
+}

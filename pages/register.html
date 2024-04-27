@@ -1,0 +1,70 @@
+<!--
+Team Members: Inigo Abuel, Luxsan Jeyasingam, Robelene Icalina
+Date: 31 March 2024
+Section: 313
+This is the html file is the register page of our Assignment 2.
+It allows users to input information to create an account that is saved to the database.
+
+Code Author(s): 
+
+HTML - Robelene Icalina
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Abuel-Jeyasingam-Icalina">
+        <title>Account</title>
+        <link rel="stylesheet" type="text/css" href="../2-css/sign-in.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="..\3-js\validation.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header-logo-only">
+                <a href="../pages/1-index.html"><img src="../0-assets/irl-logo/png/logo-no-background.png" title="Go to Home" alt="irl-logo"></a> 
+            </header>           
+            <main>
+                <!-- C:\Users\Luxsan Jeyasingam\Desktop\Webdev\CST8285 - Web Dev\Assignment_2\Web Dev A2\Web Dev A2\4-php\account.php -->
+                
+                <form action="../server/register.php" method="post" class="form" id="registerForm" onsubmit="return validate();">
+                    <h1 class="title">CREATE AN ACCOUNT</h1>              
+                    
+                    <div class="form-field">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" placeholder="First and last name" id="name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <!-- password section of the form -->
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="At least 8 characters" id="password">
+                    </div>
+                    <!-- confirm section of the form -->
+                    <div class="form-field">
+                        <label for="confirm-pw">Confirm Password</label>
+                        <input type="password" name="confirm-pw" id="confirm-pw">
+                    </div>
+                    
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button id="registerButton" value="REGISTER" class="button" type="submit">Sign-Up</button>
+                    <!-- link to sign-in page-->
+                    <div class="external-link">
+                        <p>Already a member?<a href="../pages/sign-in.html" class="link"> Sign In</a></p>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <p>2024 IRL. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

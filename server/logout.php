@@ -1,0 +1,1 @@
+<?php header("Location: https://localhost/Web%20Dev%20A2/pages/sign-in.html")?>
